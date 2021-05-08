@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Pokedex</title>
+</head>
+
+<body onload="init()">
+    <div id="main-container">
+        <h1 id="header-label">POKEDEX</h1>
+        <div id="preview-header-container">
+            <div>
+                <p>ID: <span id="detail-id"></span></p>
+                <p>NAME: <span id="detail-name"></span></p>
+            </div>
+            <img id="big-pokemon-img" src="./img/pokemon-ball.png">
+        </div>
+        <div id="detail-info-box" class="height-0">
+            <div>
+                <div>
+                    <p>HP: <span id="detail-hp"></span></p>
+                    <progress id=progress-hp max="110" value="15"></progress>
+                </div>
+                <div>
+                    <p>ATTACK: <span id="detail-atk"></span></p>
+                    <progress id=progress-atk max="110" value="15"></progress>
+                </div>
+                <div>
+                    <p>DEFENSE: <span id="detail-def"></span></p>
+                    <progress id=progress-def max="110" value="15"></progress>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <p>SPECIAL-ATTACK: <span id="detail-spec-atk"></span></p>
+                    <progress id=progress-spec-atk max="110" value="15"></progress>
+                </div>
+                <div>
+                    <p>SPECIEL-DEFENSE: <span id="detail-spec-def"></span></p>
+                    <progress id=progress-spec-def max="110" value="15"></progress>
+                </div>
+                <div>
+                    <p>SPEED: <span id="detail-speed"></span></p>
+                    <progress id=progress-speed max="110" value="15"></progress>
+                </div>
+            </div>
+        </div>
+
+        <div id="preview-container">
+
+        </div>
+
+        <div id="page-nav-bar" class="nav-bar">
+            <button id="preview-button" onclick="previewPage()"><</button>
+            <button onclick="showPage(0)">1</button>
+            <button onclick="showPage(1)">2</button>
+            <button onclick="showPage(2)">3</button>
+            <button onclick="showPage(3)">4</button>
+            <button onclick="showPage(4)">5</button>
+            <button id="next-button" onclick="nextPage()">></button>
+        </div>
+
+        <div id="detail-nav-bar" class="nav-bar d-none">
+            <button onclick="closePokemonDetails()">Close</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
