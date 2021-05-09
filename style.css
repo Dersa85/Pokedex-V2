@@ -1,8 +1,10 @@
 body {
     margin: 0;
     background-color: lightgray;
-    color: white;
+    color: rgb(229, 255, 0);
+    text-shadow: 0 0 3px #1100ff, 0 0 5px #000000;
     font-family: 'Reggae One', cursive;
+    
 }
 
 button {
@@ -44,7 +46,8 @@ progress {
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(201, 201, 6);
+    background: rgb(6,17,158);
+    background: linear-gradient(180deg, rgba(6,17,158,1) 0%, rgba(150,0,0,1) 100%);
 }
 
 #preview-header-container {
@@ -67,16 +70,20 @@ progress {
     align-items: center;
     overflow: hidden;
     height: 65%;
-    background-color: rgb(34, 21, 151);
+    background-image: url('./img/pokemon-ball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     transition: height 225ms;
     margin-top: -16px;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
 }
 
-#detail-info-box > div > div {
+#detail-info-box>div>div {
     margin-bottom: 32px;
 }
+
 #detail-info-box p {
     margin: 0;
 }
@@ -92,12 +99,11 @@ progress {
 
 #preview-container {
     overflow: hidden;
-    
     height: 65%;
     transition: height 225ms;
 }
 
-#preview-container > div {
+#preview-container>div {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -132,10 +138,10 @@ progress {
 .margin-r-a {
     margin-right: auto;
 }
+
 .margin-l-a {
     margin-left: auto;
 }
-
 
 /* HEIGHT */
 
@@ -143,6 +149,9 @@ progress {
     height: 0 !important;
 }
 
+.height-full-vh {
+    height: 100vh;
+}
 
 /* DISPLAY */
 
@@ -166,8 +175,17 @@ progress {
     justify-content: space-evenly;
 }
 
+.flex-dir-c {
+    flex-direction: column;
+}
+
 .d-none {
     display: none !important;
+}
+
+.primary-text-color{
+    color: rgb(229, 255, 0);
+    text-shadow: 0 0 3px #1100ff, 0 0 5px #000000;
 }
 
 @media (max-width: 600px) {

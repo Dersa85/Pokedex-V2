@@ -8,6 +8,13 @@ function init() {
     showPage(0);
 }
 
+function openPokedex() {
+    let startScreen = document.getElementById('start-screen');
+    startScreen.classList.add('d-none');
+    let mainContent = document.getElementById('main-container');
+    mainContent.classList.remove('d-none');
+}
+
 
 function createTemplatePokemonImgs() {
     let previewContainer = document.getElementById('preview-container');

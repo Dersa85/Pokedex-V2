@@ -13,7 +13,12 @@
 </head>
 
 <body onload="init()">
-    <div id="main-container">
+    <div id="start-screen" class="d-flex align-center just-center height-full-vh flex-dir-c" style="cursor: pointer;" onclick="openPokedex()">
+        <h1 style="font-size: 7vw;">POKEDEX</h1>
+        <p>Press to open</p>
+    </div>
+
+    <div id="main-container" class="d-none">
         <h1 id="header-label">POKEDEX</h1>
         <div id="preview-header-container">
             <div>
@@ -59,13 +64,13 @@
         </div>
 
         <div id="page-nav-bar" class="nav-bar">
-            <button id="preview-button" onclick="previewPage()"><</button>
-            <button onclick="showPage(0)">1</button>
-            <button onclick="showPage(1)">2</button>
-            <button onclick="showPage(2)">3</button>
-            <button onclick="showPage(3)">4</button>
-            <button onclick="showPage(4)">5</button>
-            <button id="next-button" onclick="nextPage()">></button>
+            <button id="preview-button" class="primary-text-color" onclick="previewPage()"><</button>
+            <button class="primary-text-color" onclick="showPage(0)">1</button>
+            <button class="primary-text-color" onclick="showPage(1)">2</button>
+            <button class="primary-text-color" onclick="showPage(2)">3</button>
+            <button class="primary-text-color" onclick="showPage(3)">4</button>
+            <button class="primary-text-color" onclick="showPage(4)">5</button>
+            <button id="next-button" class="primary-text-color" onclick="nextPage()">></button>
         </div>
 
         <div id="detail-nav-bar" class="nav-bar d-none">
